@@ -8,6 +8,7 @@ function CasePreviewFrame({ item }: { item: CaseStudy }) {
 
   const isPortal = item.previewKind === "portal";
   const isClinica = item.previewKind === "clinica";
+  const isAula = item.previewKind === "aula";
 
   return (
     <div className="mt-8">
@@ -21,17 +22,27 @@ function CasePreviewFrame({ item }: { item: CaseStudy }) {
         <div className="overflow-hidden border border-white/15 bg-navy/40 transition group-hover/preview:border-accent/45">
           <div className="flex items-center justify-between border-b border-white/10 bg-ink/50 px-3 py-2">
             <span className="text-[11px] font-medium tracking-[0.12em] text-accent uppercase">
-              {isClinica
-                ? "Preview · Consultório"
-                : isPortal
-                  ? "Preview · Portal"
-                  : "Preview · WhatsApp"}
+              {isAula
+                ? "Preview · Aula"
+                : isClinica
+                  ? "Preview · Consultório"
+                  : isPortal
+                    ? "Preview · Portal"
+                    : "Preview · WhatsApp"}
             </span>
             <span className="text-[11px] text-fog/55">somente visualização</span>
           </div>
 
           <div className="relative aspect-[16/11] bg-gradient-to-b from-navy to-ink p-4 sm:p-5">
-            {isClinica ? <ClinicThumb /> : isPortal ? <PortalThumb /> : <WhatsAppThumb />}
+            {isAula ? (
+              <AulaThumb />
+            ) : isClinica ? (
+              <ClinicThumb />
+            ) : isPortal ? (
+              <PortalThumb />
+            ) : (
+              <WhatsAppThumb />
+            )}
 
             <div className="pointer-events-none absolute inset-0 flex items-end justify-center bg-gradient-to-t from-ink/80 via-transparent to-transparent pb-4">
               <span className="border border-accent/50 bg-navy/90 px-3 py-1.5 text-xs font-medium text-accent transition group-hover/preview:border-accent group-hover/preview:bg-accent group-hover/preview:text-ink">
@@ -144,6 +155,38 @@ function ClinicThumb() {
         <div className="mt-auto border border-accent/30 bg-accent/10 p-2">
           <p className="text-[8px] text-accent">Visão 360º</p>
           <p className="text-[9px] text-fog/80">Sessão · valor · relatos · exercícios</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AulaThumb() {
+  return (
+    <div className="mx-auto flex h-full max-w-[200px] flex-col overflow-hidden rounded-[1.4rem] border-2 border-[#3a3f46] bg-black shadow-[0_12px_40px_rgba(0,0,0,0.4)]">
+      <div className="relative flex flex-1 flex-col bg-[#0b141a]">
+        <span className="absolute left-1/2 top-1.5 z-10 size-2 -translate-x-1/2 rounded-full bg-[#1a1a1a]" />
+        <div className="flex justify-between px-3 pb-1 pt-4 text-[8px] text-white">
+          <span>09:41</span>
+          <span>5G</span>
+        </div>
+        <div className="flex items-center gap-1 bg-[#1f2c34] px-1.5 py-1">
+          <span className="text-[10px] text-[#aebac1]">‹</span>
+          <span className="size-4 rounded-full bg-[#6b7c85]" />
+          <span className="text-[9px] text-white">Pedro (neto)</span>
+        </div>
+        <div className="wa-chat-bg flex flex-1 flex-col justify-end gap-1 p-1.5">
+          <div className="max-w-[80%] rounded rounded-tl-none bg-[#202c33] px-1.5 py-1 text-[8px] text-[#e9edef]">
+            Oi vó!
+          </div>
+          <div className="ml-auto max-w-[75%] rounded rounded-tr-none bg-[#005c4b] px-1.5 py-1 text-[8px] text-[#e9edef]">
+            Áudio 0:04
+          </div>
+        </div>
+        <div className="flex h-5 items-center justify-around bg-[#0b141a] text-[8px] text-white/70">
+          <span>◁</span>
+          <span>○</span>
+          <span>□</span>
         </div>
       </div>
     </div>

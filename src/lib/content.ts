@@ -55,7 +55,7 @@ export type CaseStudy = {
   tech: readonly string[];
   result: string;
   previewHref?: string;
-  previewKind?: "whatsapp" | "portal" | "clinica";
+  previewKind?: "whatsapp" | "portal" | "clinica" | "aula";
   previewNote?: string;
   previewCaption?: string;
 };
@@ -118,5 +118,23 @@ export const cases: CaseStudy[] = [
       "Situação real: terapeuta com 12 pacientes — agenda, ficha e financeiro no mesmo portal",
     previewNote:
       "Visão 360º significa abrir o paciente e ver sessão, dinheiro, relatos e próximos passos juntos — sem caçar em planilha e agenda separadas.",
+  },
+  {
+    id: "inclusao-idosos",
+    label: "Case demonstrativo · Inclusão digital",
+    title: "Ensino de tecnologia para idosos",
+    problem:
+      "O celular assusta: medo de errar, letras miúdas e explicações corridas. Muitos idosos querem só falar com a família no WhatsApp — e acabam dependendo de filho ou neto para cada toque.",
+    solution:
+      "Acompanhamento paciente, no ritmo da pessoa: um objetivo por encontro (abrir WhatsApp, mandar áudio, ver foto), botões grandes na prática, repetição sem pressa e alerta de golpes em toda sessão.",
+    tech: ["Aulas presenciais ou remotas", "Roteiro por encontros", "Segurança digital", "Apoio à família"],
+    result:
+      "Autonomia real: a pessoa consegue se comunicar sozinha, a família respira e o risco de golpe diminui porque o cuidado entra no hábito.",
+    previewHref: "/demos/inclusao-idosos/",
+    previewKind: "aula",
+    previewCaption:
+      "Situação real: aula guiada — Dona Célia aprende WhatsApp no ritmo dela",
+    previewNote:
+      "Inclusão digital não é curso genérico: é paciência, um passo por vez e segurança contra quem se aproveita da dúvida.",
   },
 ];
