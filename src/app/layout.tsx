@@ -15,7 +15,7 @@ const syne = Syne({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://opedroaugustoxds.github.io/rj-tech";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://peaugust0.github.io/rj-tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
