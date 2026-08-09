@@ -29,8 +29,8 @@ export function Hero() {
         </h1>
 
         <p className="hero-enter hero-enter-delay-2 mt-5 max-w-xl text-base leading-relaxed text-fog/85 sm:text-lg">
-          Freelancer de TI que une sistemas, automatiza atendimento e organiza a operação
-          do seu negócio — do suporte do dia a dia ao portal sob medida.
+          Une sistemas, automatiza atendimento e organiza a operação do seu negócio — do
+          suporte do dia a dia ao portal sob medida.
         </p>
 
         <div className="hero-enter hero-enter-delay-3 mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -46,7 +46,7 @@ export function Hero() {
             href="#cases"
             className="inline-flex items-center justify-center rounded-md border border-white/20 px-6 py-3.5 text-base font-medium text-white transition hover:border-accent/60 hover:text-accent"
           >
-            Ver estudos de caso
+            Preview de projetos
           </a>
         </div>
       </div>

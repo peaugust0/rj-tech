@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     template: "%s | RJ TECH",
   },
   description:
-    "Freelancer de TI: criação de sites e apps, unificação de sistemas, dashboards, automação de atendimento e gestão de tecnologia para marcas e empresas.",
+    "Criação de sites e apps, unificação de sistemas, dashboards, automação de atendimento e gestão de tecnologia para marcas e empresas.",
   keywords: [
     "RJ TECH",
-    "freelancer TI",
+    "tecnologia",
     "criação de sites",
     "automação WhatsApp",
     "unificação de sistemas",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RJ TECH | Soluções em Tecnologia & Desenvolvimento",
     description:
-      "Freelancer de TI: sites, apps, unificação de sistemas, dashboards e automação.",
+      "Sites, apps, unificação de sistemas, dashboards e automação de atendimento.",
     images: ["/images/banner-rj-tech.png"],
   },
 };
