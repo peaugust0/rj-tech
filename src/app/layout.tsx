@@ -14,8 +14,7 @@ const syne = Syne({
   weight: ["500", "600", "700", "800"],
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://peaugust0.github.io/rj-tech";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rjtechnology.store";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

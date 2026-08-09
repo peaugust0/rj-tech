@@ -1,6 +1,8 @@
 # RJ TECH — Portfolio
 
-Landing page profissional da **RJ TECH** para divulgação de serviços de TI freelance.
+Landing page profissional da **RJ TECH**.
+
+**Site:** https://rjtechnology.store
 
 ## Como rodar localmente
 
@@ -11,22 +13,29 @@ npm run dev
 
 Abra [http://localhost:3000](http://localhost:3000).
 
-## Build estático (GitHub Pages)
+## Build estático
 
 ```bash
 npm run build
 ```
 
-Gera a pasta `out/` (site estático). No deploy automático, o GitHub Actions define `NEXT_PUBLIC_BASE_PATH` com o nome do repositório.
+Gera a pasta `out/`.
 
-## Publicar no GitHub Pages
+## Domínio (Hostinger + GitHub Pages)
 
-1. Faça push para a branch `main`.
-2. Em **Settings → Pages**, em *Source*, escolha **GitHub Actions**.
-3. O workflow `.github/workflows/deploy-pages.yml` builda e publica sozinho.
-4. Site em: `https://<seu-usuario>.github.io/rj-tech/`
+O site publica via GitHub Actions. No DNS da Hostinger (zona de `rjtechnology.store`):
 
-O preview social (Facebook/WhatsApp) usa o banner em `public/images/banner-rj-tech.png`.
+| Tipo | Nome/Host | Valor |
+|------|-----------|--------|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `peaugust0.github.io` |
+
+Remova apontamentos antigos da Hostinger (parking, "Coming Soon", etc.) que conflitem com `@`.
+
+Depois que o DNS propagar, em **GitHub → Settings → Pages** ative **Enforce HTTPS**.
 
 ## Contato no site
 
@@ -34,7 +43,6 @@ WhatsApp: `(21) 97347-0393` → `https://wa.me/5521973470393`
 
 ## Stack
 
-- Next.js (App Router) + export estático
-- TypeScript
-- Tailwind CSS
-- GitHub Pages + Actions
+- Next.js (export estático)
+- TypeScript + Tailwind CSS
+- GitHub Pages + domínio customizado
