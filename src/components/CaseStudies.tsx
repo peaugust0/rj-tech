@@ -207,7 +207,7 @@ export function CaseStudies() {
             Projetos e soluções
           </h2>
           <p className="mt-4 max-w-2xl text-fog/80">
-            Casos demonstrativos baseados em dores reais de negócio mostram como a RJ TECH
+            Casos demonstrativos baseados em dores reais de negócio mostram como a RJ Technology
             estrutura problema, solução, tecnologia e resultado. Onde houver Ver projeto, você
             pode navegar.
           </p>

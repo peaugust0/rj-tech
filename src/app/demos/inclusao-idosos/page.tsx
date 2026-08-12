@@ -6,7 +6,7 @@ import { ElderlyLessonDemo } from "@/components/demos/ElderlyLessonDemo";
 export const metadata: Metadata = {
   title: "Demo · Inclusão digital para idosos",
   description:
-    "Preview de aula guiada: ensino de WhatsApp para idosos, no ritmo deles, com segurança. Demonstração RJ TECH — somente visualização.",
+    "Preview de aula guiada: ensino de WhatsApp para idosos, no ritmo deles, com segurança. Demonstração RJ Technology — somente visualização.",
   robots: { index: false, follow: false },
 };
 
@@ -17,7 +17,7 @@ export default function InclusaoIdososDemoPage() {
 
       <div className="relative z-10 flex shrink-0 items-center justify-between gap-3 border-b border-accent/25 bg-navy/90 px-4 py-2.5 sm:px-6">
         <p className="text-xs font-medium tracking-[0.12em] text-accent uppercase sm:text-sm">
-          Demo RJ TECH · somente visualização
+          Demo RJ Technology · somente visualização
         </p>
         <Link
           href="/#cases"

@@ -6,7 +6,7 @@ import { ChatbotDemo } from "@/components/demos/ChatbotDemo";
 export const metadata: Metadata = {
   title: "Demo · Chatbot WhatsApp para manicure",
   description:
-    "Preview estilo WhatsApp: chatbot de manicure com tabela de preços fixa e orçamento automático. Demonstração RJ TECH — somente visualização.",
+    "Preview estilo WhatsApp: chatbot de manicure com tabela de preços fixa e orçamento automático. Demonstração RJ Technology — somente visualização.",
   robots: { index: false, follow: false },
 };
 
@@ -17,7 +17,7 @@ export default function ChatbotDemoPage() {
 
       <div className="relative z-10 flex shrink-0 items-center justify-between gap-3 border-b border-accent/25 bg-navy/90 px-4 py-2.5 sm:px-6">
         <p className="text-xs font-medium tracking-[0.12em] text-accent uppercase sm:text-sm">
-          Demo RJ TECH · somente visualização
+          Demo RJ Technology · somente visualização
         </p>
         <Link
           href="/#cases"

@@ -9,8 +9,8 @@ export function Logo({ className = "" }: LogoProps) {
         <span className="text-white">R</span>
         <span className="text-accent">J</span>
       </span>
-      <span className="text-[0.72em] font-semibold tracking-[0.18em] text-white">
-        TECH
+      <span className="text-[0.55em] font-semibold tracking-[0.12em] text-white sm:text-[0.62em]">
+        Technology
       </span>
     </span>
   );

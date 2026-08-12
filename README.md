@@ -1,6 +1,6 @@
-# RJ TECH — Portfolio
+# RJ Technology — Portfolio
 
-Landing page profissional da **RJ TECH**.
+Landing page profissional da **RJ Technology**.
 
 **Site:** https://rjtechnology.store
 

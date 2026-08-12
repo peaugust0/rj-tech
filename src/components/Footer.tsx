@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-5 sm:flex-row sm:items-center sm:px-8">
         <Logo className="text-lg" />
         <p className="text-sm text-fog/55">
-          © {year} RJ TECH · Soluções em tecnologia &amp; desenvolvimento
+          © {year} RJ Technology · Soluções em tecnologia &amp; desenvolvimento
         </p>
       </div>
     </footer>

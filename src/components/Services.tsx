@@ -63,7 +63,7 @@ export function Services() {
         <Reveal>
           <p className="text-sm font-medium tracking-[0.16em] text-accent uppercase">Serviços</p>
           <h2 className="mt-3 max-w-2xl font-display text-3xl font-semibold text-white sm:text-4xl">
-            O que a RJ TECH resolve no seu negócio
+            O que a RJ Technology resolve no seu negócio
           </h2>
           <p className="mt-4 max-w-2xl text-fog/80">
             Do suporte técnico à construção de sistemas — sempre com foco em resultado prático.

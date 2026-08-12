@@ -19,13 +19,13 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rjtechnology.store"
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "RJ TECH | Soluções em Tecnologia & Desenvolvimento",
-    template: "%s | RJ TECH",
+    default: "RJ Technology | Soluções em Tecnologia & Desenvolvimento",
+    template: "%s | RJ Technology",
   },
   description:
     "Criação de sites e apps, unificação de sistemas, dashboards, automação de atendimento e gestão de tecnologia para marcas e empresas.",
   keywords: [
-    "RJ TECH",
+    "RJ Technology",
     "tecnologia",
     "criação de sites",
     "automação WhatsApp",
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     "Power BI",
     "suporte TI remoto",
   ],
-  authors: [{ name: "RJ TECH" }],
+  authors: [{ name: "RJ Technology" }],
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: "RJ TECH",
-    title: "RJ TECH | Soluções em Tecnologia & Desenvolvimento",
+    siteName: "RJ Technology",
+    title: "RJ Technology | Soluções em Tecnologia & Desenvolvimento",
     description:
       "Soluções completas em tecnologia e desenvolvimento. Cases reais de negócio — do chatbot ao portal unificado.",
     images: [
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
         url: "/images/banner-rj-tech.png",
         width: 1200,
         height: 630,
-        alt: "RJ TECH — Soluções completas em tecnologia e desenvolvimento",
+        alt: "RJ Technology — Soluções completas em tecnologia e desenvolvimento",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RJ TECH | Soluções em Tecnologia & Desenvolvimento",
+    title: "RJ Technology | Soluções em Tecnologia & Desenvolvimento",
     description:
       "Sites, apps, unificação de sistemas, dashboards e automação de atendimento.",
     images: ["/images/banner-rj-tech.png"],

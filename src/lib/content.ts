@@ -1,5 +1,5 @@
 export const WHATSAPP_URL =
-  "https://wa.me/5521973470393?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20RJ%20TECH%20e%20quero%20saber%20mais.";
+  "https://wa.me/5521973470393?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20RJ%20Technology%20e%20quero%20saber%20mais.";
 
 export const PHONE_DISPLAY = "(21) 97347-0393";
 

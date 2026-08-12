@@ -30,7 +30,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-[4.25rem] sm:px-8">
-        <a href="#topo" className="text-xl sm:text-2xl" aria-label="RJ TECH — início">
+        <a href="#topo" className="text-xl sm:text-2xl" aria-label="RJ Technology — início">
           <Logo />
         </a>
 

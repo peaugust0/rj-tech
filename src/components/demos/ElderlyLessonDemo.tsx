@@ -137,7 +137,7 @@ export function ElderlyLessonDemo() {
           <div className="flex min-w-0 flex-col gap-4">
             <div className="border border-accent/30 bg-accent/10 px-4 py-4">
               <p className="text-[11px] font-medium tracking-wide text-accent uppercase">
-                Instrutor RJ TECH
+                Instrutor RJ Technology
               </p>
               <p className="mt-2 text-base leading-relaxed text-fog/90 sm:text-[1.05rem]">
                 {step.coach}
